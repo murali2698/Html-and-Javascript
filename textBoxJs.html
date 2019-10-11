@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input id="text1" placeholder="User Name">
+    <br>
+    <input id="text2" placeholder="password" type="password">
+    <br>
+    <button onclick="fun()" id="btn1">Click Me</button>
+</body>
+</html>
+
+<script>
+    function fun(){
+        var str = document.getElementById("text1").value;
+        var str2 = document.getElementById("text2").value;
+
+        
+        if (str==str2){
+            alert("userName and the password are same")
+        }else{
+            alert("passsword is saved")
+        }
+       // alert("Value inside the text box is : "+str)
+    }
+</script>

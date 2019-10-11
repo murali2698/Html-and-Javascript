@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript">
+        var x=5;
+        function add(){
+            var a=10;
+            document.write(a);
+            // a is a local variable
+            // global variable is accesable in function also but it cannot be accessed outside
+            document.write(x);
+        }
+        add();
+        
+        // variable is available throught the script is called as global variable
+        
+        // avove is global variable
+        document.write(x);
+        document.write(a);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

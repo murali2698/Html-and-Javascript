@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript">
+       function cars(carMOdel,carBrand,price){
+           this.carMOdel = carMOdel;
+           this.carBrand = carBrand;
+           this.price = price;
+
+           this.autopilot = function(){
+               document.write("this ia auto pilot car")
+           }
+       }
+       cars.fueltype="Electric"
+       cars.price = 40000;
+       var c1 = new cars("model 3","Tesla",35000);
+       var c2 = new cars("model p","Audi",34000);
+       document.write(c1.price)
+
+       var str1 = new String();
+        document.write(cars.fueltype)
+        document.write(cars.price)
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

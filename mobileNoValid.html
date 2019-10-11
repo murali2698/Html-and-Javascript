@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input id="uname" type="text" placeholder="Cell Number"/><br>
+    <label id="ibluser" style="color: red ; visibility: hidden;">Invalid userName</label><br>
+    <button onclick="validate()" type="button">Submit</button>
+</body>
+</html>
+
+<script>
+    function validate(){
+        var userName = document.getElementById("uname").value;
+
+        var regx = /^[6-9]\d{9}$/;
+
+        if(regx.test(userName)){
+            //alert("Correct UserName");
+            document.getElementById("ibluser").innerHTML="valid Mobile Number";
+            document.getElementById("ibluser").style.color="green";
+            document.getElementById("ibluser").style.visibility="visible";
+
+        }else{
+           // alert("inValid UserName");
+
+            document.getElementById("ibluser").style.visibility="visible";
+            document.getElementById("ibluser").style.color="orange";
+            document.getElementById("ibluser").innerHTML="Invalid Mobile Number";
+        }
+    }
+</script>

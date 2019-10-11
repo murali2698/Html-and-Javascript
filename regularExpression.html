@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <input id="uname" placeholder="userName" type="text" /><br>
+        <label id="Ibluser" style="color: red ; visibility : hidden">Invalid UserName</label>
+        <br>
+        <button onclick="validate()" type="button">Submit</button>
+
+    </form>
+</body>
+
+</html>
+
+<script>
+    function validate(){
+        var username = document.getElementById("uname").value;
+
+        var regx = /[^a-xA-X]00/;
+        if(regx.test(username)){
+            alert("valid user name");
+            document.getElementById("Ibluser").style.visibility="hidden";
+        }else{
+            alert("invalid username");
+            document.getElementById("Ibluser").style.visibility="visible";
+        }
+    }
+</script>

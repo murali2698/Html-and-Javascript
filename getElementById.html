@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript">
+        function fn(){
+
+            var par = document.getElementsByTagName("p")
+            par[0].style.fontSize = 22 ; 
+            alert("hello");
+        }
+    </script>
+</head>
+<body>
+        <p class="l">This is a first paragraph</p>
+        <p>this doesn't works</p>
+        <p class="l">This is a second paragraph</p>
+        <p class="l">This is a third paragraph</p>
+        <p>This is a fourth paragraph</p>
+        <p>This is a five paragraph</p>
+        <br>
+        <a href="#">this is a anchor tag</a>
+        <br><br>
+        <button onclick="fn()">click me</button>
+</body>
+</html>
