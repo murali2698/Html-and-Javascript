@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="start()">Start</button>
+    <h2 id="op">Some Text</h2>
+    <button onclick="stop()">Stop</button>
+    
+</body>
+</html>
+
+<script>
+    // basic timer can be designed using the time function 
+    // settimeout,setinterva,cleartimeout, clearinterval are some function that can be used
+    var id=0;
+    var seconds=0;
+    function printMsg(){
+        document.getElementById("op").innerHTML=seconds+" seconds";
+        seconds++;
+    }
+
+    function start(){
+        id=window.setInterval(printMsg,1000);
+    }
+
+    function stop(){
+        window.clearInterval(id);
+    }
+    
+</script>
